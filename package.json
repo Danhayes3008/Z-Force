@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  },
+  "name": "z-force",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Hayes",
+  "license": "ISC",
+  "description": "Admin Bot for the Project Zero discord server"
+}
