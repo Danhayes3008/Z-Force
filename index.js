@@ -6,6 +6,7 @@ require("dotenv").config();
 // Reading command files
 client.commands = new Discord.Collection();
 
+// looks for our commands in the commands folder and looks for .js files
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -23,8 +24,12 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
 client.on('message', message =>{
+  // checks if the content is from the bot or user using the prefix
   if (!message.content.startsWith(PREFIX) || message.author.bot) return;
+
+  // Allows you to have multiple commands
   const args = message.content.slice(PREFIX.length).trim().split(/ +/);
+  // makes it all lowercase
 	const command = args.shift().toLowerCase();
   if (!client.commands.has(command)) return;
 
