@@ -37,7 +37,12 @@ module.exports = {
         }else if( args[0]=== 'member'){
             const embed = new Discord.MessageEmbed()
             .addField('Member Commands:', "Commands:")
-            .addField("Member", "test embed")
+            .addFields(
+                { name: 'Add Role', value: 'Some value here', inline: true },
+                { name: 'Remove Role', value: 'Some value here', inline: true },
+                { name: 'Ban Member', value: 'Some value here', inline: true },
+                { name: 'Kick Member', value: 'Some value here', inline: true },
+            )
             .setColor(0x38f560);
             message.reply(embed);
         }else if( args[0]=== 'schedules'){
