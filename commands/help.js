@@ -23,6 +23,7 @@ module.exports = {
                 { name: 'Request Role Change', value: 'Some value here', inline: true },
                 { name: 'Request Event', value: 'Some value here', inline: true },
                 { name: 'Request Challange', value: 'Some value here', inline: true },
+                { name: 'Request Nickname Change', value: 'Some value here', inline: true },
             )
             .addField("Complaint Forms", "test embed")
             .setColor(0x38f560);
