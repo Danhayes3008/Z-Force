@@ -17,12 +17,12 @@ for (const file of commandFiles) {
 }
 
 client.on("ready", () => {
-  console.log("This bot is online!");
+	// tells us the bot is active
+	console.log("This bot is online!");
+	// tells us what bot we are logged in with
+	console.log(`Logged in as ${client.user.tag}!`)
 });
 
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`)
-})
 client.on('message', message =>{
   // checks if the content is from the bot or user using the prefix
   if (!message.content.startsWith(PREFIX) || message.author.bot) return;
