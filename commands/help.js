@@ -36,7 +36,7 @@ module.exports = {
             message.reply(embed);
         }else if( args[0]=== 'member'){
             const embed = new Discord.MessageEmbed()
-            .addField('Member Commands')
+            .addField('Member Commands:', "Commands:")
             .addField("Member", "test embed")
             .setColor(0x38f560);
             message.reply(embed);
