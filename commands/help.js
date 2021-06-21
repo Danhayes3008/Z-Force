@@ -7,11 +7,8 @@ module.exports = {
         // If there are no arguments with the !help then this is what the bot will display to the screen
         if(!args.length) {
             const embed = new Discord.MessageEmbed()
-            .addField('**Here are the available commands:**', "Please note that this bot uses '!' as a command prefix")
-            .addField("Details:", "`!ping`**: Simple direct message that gets one responce back**")
-            .addFields(
-                { name: 'about', value: 'Some value here' }
-            )
+            .addField('Help Menu', "Please find below commands to search the help menu sections")
+            .addField("`!help info`")
             // Sets a colour to the side of the embed box on the screen
             .setColor(0x38f560);
             message.reply(embed);
