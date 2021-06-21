@@ -54,8 +54,7 @@ module.exports = {
                 { name: 'Delete Events', value: 'Some value here', inline: true },
                 { name: 'Set Alerts', value: 'Some value here', inline: true },
                 { name: 'Check Alerts', value: 'Some value here', inline: true },
-                { name: 'Delete Alerts', value: 'Some value here', inline: true },
-                
+                { name: 'Delete Alerts', value: 'Some value here', inline: true },                
             )
             .setColor(0x38f560);
             message.reply(embed);
