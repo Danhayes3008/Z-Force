@@ -18,14 +18,15 @@ module.exports = {
         } else if( args[0]=== 'forms'){
             const embed = new Discord.MessageEmbed()
             .addField('Forms Commands', "this section is the list of commands to submit requests and complaints")
-            .addField("Request Forms:")
+            .addField("Request Forms:", "Commands:")
+            // The commands for making a rquest
             .addFields(
                 { name: 'Request Role Change', value: 'Some value here', inline: true },
                 { name: 'Request Event', value: 'Some value here', inline: true },
                 { name: 'Request Challange', value: 'Some value here', inline: true },
                 { name: 'Request Nickname Change', value: 'Some value here', inline: true },
             )
-            .addField("Complaint Forms", "test embed")
+            .addField("Complaint Forms", "Commands:")
             .setColor(0x38f560);
             message.reply(embed);
         }else if( args[0]=== 'member'){
