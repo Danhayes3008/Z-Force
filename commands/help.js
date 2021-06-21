@@ -8,17 +8,13 @@ module.exports = {
         if(!args.length) {
             const embed = new Discord.MessageEmbed()
             .addField('Help Menu', "Please find below commands to search the help menu sections")
-            .addField("`!help info`")
+            .addField("`!help forms`")
+            .addField("`!help member`")
+            .addField("`!help schedules`")
             // Sets a colour to the side of the embed box on the screen
             .setColor(0x38f560);
             message.reply(embed);
         // If there is one argument with the word listed in the if statement then the bot will display the content for that argument
-        } else if( args[0]=== 'about'){
-            const embed = new Discord.MessageEmbed()
-            .addField('About Commands')
-            .addField("About", "test embed")
-            .setColor(0x38f560);
-            message.reply(embed);
         } else if( args[0]=== 'forms'){
             const embed = new Discord.MessageEmbed()
             .addField('Forms Commands', "this section is the list of commands to submit requests and complaints")
