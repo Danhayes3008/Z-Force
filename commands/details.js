@@ -12,6 +12,8 @@ module.exports = {
             { name: 'details', value: 'add details here' },
             { name: 'Version', value: `${version}` }
         )
+        .setFooter(`${message.author.username} request`)
+        .setTimestamp()
         .setColor(0x38f560);
         message.reply(embed);
 	},
