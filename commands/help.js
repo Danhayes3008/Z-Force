@@ -15,8 +15,14 @@ module.exports = {
         // If there is one argument with the word listed in the if statement then the bot will display the content for that argument
         } else if( args[0]=== 'about'){
             const embed = new Discord.MessageEmbed()
-            .addField('**About Commands')
+            .addField('About Commands')
             .addField("About", "test embed")
+            .setColor(0x38f560);
+            message.reply(embed);
+        } else if( args[0]=== 'member'){
+            const embed = new Discord.MessageEmbed()
+            .addField('Member Commands')
+            .addField("Member", "test embed")
             .setColor(0x38f560);
             message.reply(embed);
         }
