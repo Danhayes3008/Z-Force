@@ -37,7 +37,7 @@ module.exports = {
             message.reply(embed);
         }else if( args[0]=== 'schedules'){
             const embed = new Discord.MessageEmbed()
-            .addField('schedules Commands', "this section is the list of commands to submit requests and complaints")
+            .addField('schedules Commands', "this section is the list of commands to deal with events and alerts for the server")
             .addField("Event Checker", "test embed")
             .setColor(0x38f560);
             message.reply(embed);
