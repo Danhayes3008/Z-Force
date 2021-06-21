@@ -19,12 +19,6 @@ module.exports = {
             .addField("About", "test embed")
             .setColor(0x38f560);
             message.reply(embed);
-        } else if( args[0]=== 'member'){
-            const embed = new Discord.MessageEmbed()
-            .addField('Member Commands')
-            .addField("Member", "test embed")
-            .setColor(0x38f560);
-            message.reply(embed);
         } else if( args[0]=== 'forms'){
             const embed = new Discord.MessageEmbed()
             .addField('Forms Commands', "this section is the list of commands to submit requests and complaints")
@@ -32,7 +26,12 @@ module.exports = {
             .addField("Complaint Forms", "test embed")
             .setColor(0x38f560);
             message.reply(embed);
-        }
-		
+        }else if( args[0]=== 'member'){
+            const embed = new Discord.MessageEmbed()
+            .addField('Member Commands')
+            .addField("Member", "test embed")
+            .setColor(0x38f560);
+            message.reply(embed);
+        }		
 	},
 };
