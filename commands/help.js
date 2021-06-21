@@ -27,6 +27,11 @@ module.exports = {
                 { name: 'Request Nickname Change', value: 'Some value here', inline: true },
             )
             .addField("Complaint Forms", "Commands:")
+            .addFields(
+                { name: 'Report Member', value: 'Some value here', inline: true },
+                { name: 'Report Propaganda', value: 'Some value here', inline: true },
+                { name: 'Report Content', value: 'Some value here', inline: true },
+            )
             .setColor(0x38f560);
             message.reply(embed);
         }else if( args[0]=== 'member'){
@@ -38,7 +43,7 @@ module.exports = {
         }else if( args[0]=== 'schedules'){
             const embed = new Discord.MessageEmbed()
             .addField('schedules Commands', "this section is the list of commands to deal with events and alerts for the server")
-            .addField("Event Checker", "test embed")
+            .addField("Event Checker:", "Commands:")
             .setColor(0x38f560);
             message.reply(embed);
         }	
