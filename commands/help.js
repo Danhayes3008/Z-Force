@@ -8,9 +8,9 @@ module.exports = {
         if(!args.length) {
             const embed = new Discord.MessageEmbed()
             .addField('Help Menu', "Please find below commands to search the help menu sections")
-            .addField("`!help forms`")
-            .addField("`!help member`")
-            .addField("`!help schedules`")
+            .addField("`!help forms`", "Request and Complaints forms")
+            .addField("`!help member`", "member Managment")
+            .addField("`!help schedules`", "Events and alerts managment and checker")
             // Sets a colour to the side of the embed box on the screen
             .setColor(0x38f560);
             message.reply(embed);
