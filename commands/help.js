@@ -32,6 +32,12 @@ module.exports = {
             .addField("Member", "test embed")
             .setColor(0x38f560);
             message.reply(embed);
-        }		
+        }else if( args[0]=== 'schedules'){
+            const embed = new Discord.MessageEmbed()
+            .addField('schedules Commands', "this section is the list of commands to submit requests and complaints")
+            .addField("Event Checker", "test embed")
+            .setColor(0x38f560);
+            message.reply(embed);
+        }	
 	},
 };
