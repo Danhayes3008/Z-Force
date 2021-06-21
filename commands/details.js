@@ -1,10 +1,8 @@
 const Discord  = require('discord.js');
 module.exports = {
 	name: 'details',
-	description: 'help-details',
+	description: 'details',
 	execute(message) {
-        let args = message.content.substring(prefix.length).split(" ");
-
 		const embed = new Discord.MessageEmbed()
         .addField('**Here are the available commands:**', "Please note that this bot uses '!' as a command prefix")
         .addField("Details:")
