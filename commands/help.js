@@ -47,8 +47,16 @@ module.exports = {
             message.reply(embed);
         }else if( args[0]=== 'schedules'){
             const embed = new Discord.MessageEmbed()
-            .addField('schedules Commands', "this section is the list of commands to deal with events and alerts for the server")
-            .addField("Event Checker:", "Commands:")
+            .addField('schedules Commands:', "this section is the list of commands to deal with events and alerts for the server")
+            .addFields(
+                { name: 'Set Event', value: 'Some value here', inline: true },
+                { name: 'Check Events', value: 'Some value here', inline: true },
+                { name: 'Delete Events', value: 'Some value here', inline: true },
+                { name: 'Set Alerts', value: 'Some value here', inline: true },
+                { name: 'Check Alerts', value: 'Some value here', inline: true },
+                { name: 'Delete Alerts', value: 'Some value here', inline: true },
+                
+            )
             .setColor(0x38f560);
             message.reply(embed);
         }	
