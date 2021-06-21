@@ -26,7 +26,7 @@ module.exports = {
                 { name: 'Request Challange', value: 'Some value here', inline: true },
                 { name: 'Request Nickname Change', value: 'Some value here', inline: true },
             )
-            .addField("Complaint Forms", "Commands:")
+            .addField("Complaint Forms:", "Commands:")
             .addFields(
                 { name: 'Report Member', value: 'Some value here', inline: true },
                 { name: 'Report Propaganda', value: 'Some value here', inline: true },
