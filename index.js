@@ -40,19 +40,5 @@ client.on('message', message =>{
 		message.reply('there was an error trying to execute that command!');
 	}
 });
-// client.on("message", msg => {
-//   let args = msg.content.substring(PREFIX.length).split(" ");
-//   switch(args[0]){
-//     // Ping command
-//     case "ping":
-//       msg.reply("pong!");
-//       break;
-
-//     case "yodababy":
-//       msg.reply("https://media.giphy.com/media/ZFi2wFRs3lBvYNglWk/giphy.gif");
-//       break;
-//   }
-// });
-
 
 client.login(process.env.TOKEN);
